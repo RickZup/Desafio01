@@ -47,7 +47,8 @@ public class EntregaMaxima {
             numerosComputador.add(numeroAleatorio);
         }
 
-        System.out.println("Digite um número inteiro:");
+        System.out.println("-------------------");
+        System.out.println("Digite seu palpite:");
         numeroDigitado = entrada.nextInt();
         numerosUsuario.add(numeroDigitado);
 
@@ -64,13 +65,12 @@ public class EntregaMaxima {
             System.out.println("O número escolhido pelo computador foi " + numeroAleatorio);
         }
 
-        //--------------------Iniciado a entrega média apartir daqui!--------------------
-
         System.out.println("----------------------");
         System.out.println("Vamos mais uma vez?");
         System.out.println("Digite 'Sim' ou 'Não'!");
         resposta = entrada.next();
 
+        //ToDo Tratar acentuação
         if (resposta.equalsIgnoreCase("Não")){
             System.out.println("-----------------------------------------------------");
             System.out.println("Entendo, agradeço por jogar comigo, volte outra hora!");
@@ -79,14 +79,13 @@ public class EntregaMaxima {
         }
 
         while (resposta.equalsIgnoreCase("Sim")){
-
             for (int i = 0; i < 1; i++){
                 numeroAleatorio = gerador.nextInt(quantidadeDeNumeros);
                 numerosComputador.add(numeroAleatorio);
             }
 
             System.out.println("-------------------------");
-            System.out.println("Digite um número inteiro:");
+            System.out.println("Digite seu palpite:");
             numeroDigitado = entrada.nextInt();
             numerosUsuario.add(numeroDigitado);
 

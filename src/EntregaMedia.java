@@ -20,7 +20,7 @@ public class EntregaMedia {
         System.out.println("Vamos nos divertir? Quero ver se você consegue advinhar o número no qual estou pensando...");
         System.out.println("------------------------------------------------------------------------------------------");
 
-        System.out.println("Digite um número inteiro:");
+        System.out.println("Digite seu palpite:");
         numeroDigitado = entrada.nextInt();
 
         if (numeroDigitado == numeroAleatorio){
@@ -35,8 +35,6 @@ public class EntregaMedia {
             System.out.println("Poxa... Não foi dessa vez! Infelizmente você perdeu.");
             System.out.println("O número escolhido pelo computador foi " + numeroAleatorio);
         }
-
-        //--------------------Iniciado a entrega média apartir daqui!--------------------
 
         System.out.println("----------------------");
         System.out.println("Vamos mais uma vez?");
@@ -56,7 +54,7 @@ public class EntregaMedia {
             }
 
             System.out.println("-------------------------");
-            System.out.println("Digite um número inteiro:");
+            System.out.println("Digite seu palpite:");
             numeroDigitado = entrada.nextInt();
 
             if (numeroDigitado == numeroAleatorio){
